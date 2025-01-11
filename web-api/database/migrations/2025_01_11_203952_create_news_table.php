@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('content');
-            $table->string('author');
+            $table->string('title')->unique();
+            $table->text('content')->nullable();
+            $table->string('author')->nullable();
             $table->string('source');
+            $table->string('url');
             $table->timestamp('published_at');
             $table->json('tags');
             $table->timestamps();
