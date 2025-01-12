@@ -70,16 +70,7 @@ endpoints:
       password: secret
       password_confirmation: secret
     fileParameters: []
-    responses:
-      -
-        status: 201
-        content: |-
-          {
-            "message": "User registered successfully"
-          }
-        headers: []
-        description: ''
-        custom: []
+    responses: []
     responseFields: []
     auth: []
     controller: null

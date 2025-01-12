@@ -13,7 +13,7 @@ sail-genereate-doc:
 sail-unit-test:
 	cd web-api && ./vendor/bin/sail aritsan test
 
-# sail-alias:
-# 	cd web-api && alias sail='bash vendor/bin/sail'
+sail-alias:
+	cd web-api && alias sail='bash ./vendor/bin/sail'
 
 
